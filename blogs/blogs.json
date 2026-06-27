@@ -3,19 +3,12 @@
   "feeds": [
     {
       "source": "https://www.ourbranch.com/s/blog",
-      "feed_url": "https://www.ourbranch.com/s/blog",
-      "title": "",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://www.ourbranch.com/s/press",
-      "feed_url": "https://www.ourbranch.com/s/press",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:28:36Z",
+  "agent_pulled": "2026-06-27"
 }

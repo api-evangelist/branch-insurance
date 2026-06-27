@@ -120,7 +120,7 @@ common:
   url: https://www.ourbranch.com/
 - type: Portal
   url: https://docs.v2.api.ourbranch.com/
-- type: SignUp
+- type: Signup
   url: https://www.ourbranch.com/
 - type: GettingStarted
   url: https://docs.v2.api.ourbranch.com/
