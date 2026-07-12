@@ -116,6 +116,8 @@ apis:
   - url: graphql/branch-insurance-graphql.md
     type: GraphQL
 common:
+- type: DomainSecurity
+  url: security/branch-insurance-domain-security.yml
 - type: Website
   url: https://www.ourbranch.com/
 - type: Portal
