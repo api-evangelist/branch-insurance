@@ -29,9 +29,20 @@ description: >-
   GraphQL-only and the schema is browsable on Apollo Studio
   (studio.apollographql.com/public/Branch-Quote-to-Bind-Staging) with an API key.
 type: Index
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 position: Provider
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/branch-insurance.png
 tags:
 - Insurance
 - Home Insurance
