@@ -91,6 +91,17 @@ apis:
   - Home Insurance
   - Auto Insurance
   - Umbrella Insurance
+  - Quotes
+  - Bind
+  - Policy
+  - GraphQL
+  - Embedded Insurance
+  - Partner API
+  tags_raw:
+  - Insurance
+  - Home Insurance
+  - Auto Insurance
+  - Umbrella Insurance
   - Quote
   - Bind
   - Policy
