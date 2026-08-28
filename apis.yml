@@ -29,6 +29,17 @@ description: >-
   GraphQL-only and the schema is browsable on Apollo Studio
   (studio.apollographql.com/public/Branch-Quote-to-Bind-Staging) with an API key.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
