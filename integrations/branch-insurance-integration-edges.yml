@@ -13,6 +13,6 @@ edges:
   direction: partner-built
   evidence: https://app.usecanopy.com/api/v1.0.0/carriers
   category: insurance-carrier
-  covered_as: branch-insurance
+  covered_as: branch
   detected_by: sweep-insurance.py
   detected: '2026-10-13'
