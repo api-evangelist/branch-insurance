@@ -1,4 +1,4 @@
-# branch-insurance
+# Branch
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Branch — Columbus, Ohio insurtech bundling home + auto (+ umbrella) insurance, with an embedded Quote to Bind GraphQL API at docs.v2.api.ourbranch.com used by affinity partners (mortgage originators, lenders, aggregators) to quote and bind Branch policies without leaving their own apps.
+Branch is a Columbus, Ohio insurtech that bundles home and auto insurance (with optional umbrella coverage) and issues policies in seconds from just a name and address. The company operates as Branch Insurance Exchange, a reciprocal insurer, plus the managing General Branch Agency / Branch Financial, Inc. holding company, and originally targeted direct-to-consumer customers with a quote-and-bind flow that prefills rating data from public sources. Branch raised a $147M Series C at a $1.05B valuation in 2022 (Weatherford Capital, Acrew Capital, Anthemis, Cherry Creek Holdings, Greycroft, HSCM Bermuda, AmFam Ventures, others), partnered with SimpliSafe (home security bundle) and ADT, and runs an embedded "Quote to Bind" GraphQL API used by affinity partners (mortgage originators, lenders, aggregators) to embed home + auto quotes inside their own apps. The Quote to Bind v2 GraphQL API (https://docs.v2.api.ourbranch.com) exposes requestQuoteV2, recalculateQuoteV2, addCar, addDriver, requestBind, getOffer, enhancedGetOffer, getBoundPoliciesByOfferId, getPolicyDocuments, and getOfferPDF, plus optional webhook / SFTP / S3 postbacks for bind and document-signed events. Partners authenticate with an API key in the Authorization header and an x-affinity-code header when responsible for multiple agencies, and may either run the whole flow via the API or hand customers off to ourbranch.com / staff.ourbranch.com for customize / review / checkout / sign-documents steps. A staging endpoint at https://staging.v2.api.ourbranch.com mirrors production with shared test users and payment methods. Branch operates in roughly two dozen US states including Ohio, Texas, Illinois, Arizona, Missouri, and others, and emphasises community-discount pricing, a community pledge / giveback program, and B Corp certification (2023). There is no public OpenAPI specification — the API is GraphQL-only and the schema is browsable on Apollo Studio (studio.apollographql.com/public/Branch-Quote-to-Bind-Staging) with an API key.
+
+**Areas:** Insurance · Home Insurance · Auto Insurance · Umbrella Insurance · Bundled Insurance · Insurtech · Reciprocal Exchange · Embedded Insurance · Quote to Bind · GraphQL · Partner API · Affinity
+
+## Branch on APIs.io
+
+Everything profiled for Branch is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/branch-insurance/](https://apis.io/providers/branch-insurance/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Branch Quote to Bind API](https://apis.io/apis/branch-insurance/branch-quote-to-bind-api/) — Branch's Quote to Bind GraphQL API exposes everything an affinity partner needs to go from initial quote to final purchase of Branch home + auto (and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### GraphQL (1)
+
+GraphQL schemas.
+
+- [Branch GraphQL API](https://apis.io/graphqls/branch-insurance/branch-insurance-graphql/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Branch Insurance Domain Security](https://apis.io/security/branch-insurance/branch-insurance-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ourbranch.com/)
+- [Documentation](https://www.ourbranch.com/s/blog/branch_insurance_exchange)
+- [Getting started](https://docs.v2.api.ourbranch.com/)
+- [Blog](https://www.ourbranch.com/s/blog)
+- [Terms of service](https://www.ourbranch.com/s/blog/terms-of-use)
+- [Privacy policy](https://www.ourbranch.com/s/blog/privacy-policy)
+- [GitHub](https://github.com/OurBranch)
+
+## API Evangelist rating
+
+**Kin Score 24.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 6.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 34.2 |
+
+**Agent readiness 6.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.5** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/branch-insurance/](https://apis.io/providers/branch-insurance/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Branch: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/branch-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
